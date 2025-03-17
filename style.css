@@ -99,7 +99,68 @@ main .sobre {
 /* PERSONALIZAÇÃO DA SEÇÃO EXPERIÊNCIA */
 
 main .xp {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     height: 100vh;
+    padding: 0 20vw;
+}
+
+.xp .empresa {
+    padding: 0 20px;
+    width: 35vw;
+    border-left: #999 1px solid;
+}
+
+.xp .empresa h1 {
+    margin: 5px 5px 15px 5px;
+    font-family: "Audiowide", sans-serif;
+    font-size: 18pt;
+}
+
+.xp .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100px;
+    height: max-content;
+}
+
+.xp .buttons input {
+    padding: 10px 10px;
+    background-color: #111;
+    color: #fff;
+    border: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12pt;
+    font-weight: 800;
+    width: 100%;
+}
+
+.xp .buttons input:hover {
+    text-shadow: 0px 0px 5px #eee;
+}
+
+.xp .buttons input:active {
+    text-shadow: 0px 0px 10px #000;
+    color: #444
+}
+
+
+.xp .subtitulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "DM Sans", sans-serif;
+    font-size: 12pt;
+}
+
+.xp .empresa .descricao {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15pt;
 }
 
 /* PERSONALIZAÇÃO DA SEÇÃO PROJETOS */
@@ -113,9 +174,14 @@ main .projetos {
 }
 
 .projetos .tituloProjetos {
+    
+    
+}
+
+.projetos .tituloProjetos h1 {
     font-family: "Audiowide", sans-serif;
     font-size: 13pt;
-    padding: 0 40px;
+    padding: 0 45px;
 }
 
 .projetos .grid {
@@ -132,6 +198,12 @@ main .projetos {
 .projetos .grid div:hover {
     border-radius: 10px;
     background-color: #333;
+}
+
+.projetos .grid .descricao {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 80px;
 }
 
 .projetos .grid img {
@@ -163,11 +235,10 @@ main .links {
     font-size: 13pt;
 }
 
-.links .group input{
-    background-color: #111;
-    color:#fff;
-    border: #999 1px solid;
-    padding: 10px;
+.links .group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .links .group input{

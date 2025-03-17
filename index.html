@@ -46,25 +46,51 @@
         
         </section>
         <section id="xp" class="xp">
-            
+            <span class="buttons">
+                <input id="BoreoBtn" type="button" value="Boreo" onclick="showBoreo()">
+                <input id="AirsideBtn" type="button" value="Airside" onclick="showAirside()">
+            </span>
+            <span class="empresa" id="Boreo">
+                <h1>Boreo Sistema de Gestão</h1>
+                <span class="subtitulo">
+                    <p>Técnico em infraestrutura</p>
+                    <p>19/07/2024 - 22/01/2025</p>
+                </span>
+                <p class="descricao">Realizei alguns atendimentos de suporte técnico e depois realizava os suportes relacionados ao setor de infraestrutura da empresa para com os clientes.</p>
+            </span>
+            <span class="empresa" id="Airside" hidden>
+                <h1>Airside Ind. e Com. de Produtos para Climatização</h1>
+                <span class="subtitulo">
+                    <p>Auxiliar de compras</p>
+                    <p>01/04/2021 - 25/02/2024</p>
+                </span>
+                <p class="descricao">Trabalhei como Assistente de compras, realizando cotações, planilhas de acompanhamento de pedidos e análise de orçamentos.</p>
+            </span>
         </section>
         <section id="projetos" class="projetos">
             <span class="tituloProjetos">
-                <p>Alguns dos projetos que realizei</p>
+                <h1>Alguns dos projetos que realizei</h1>
             </span>
             <span class="grid">
                 <div>
                     <a href="https://github.com/KauaValim/AppFerramentas" target="_blank">
                     <img src="./static/AppFerramentas.png" alt="Software loja de ferramentas">
-                    <p><b>APP Ferramentas</b></p>
-                    <p>Projeto escolar realizado em 22/04/2024 a fim de testar conhecimentos de programação orientada a objetos na liguagem JAVA, com interação direta a um banco de dados relacional MySQL.</p>
+                    <p class="titulo"><b>APP Ferramentas</b></p>
+                    <p class="descricao">Projeto escolar realizado em 22/04/2024 a fim de testar conhecimentos de programação orientada a objetos na liguagem JAVA, com interação direta a um banco de dados relacional MySQL.</p>
                     </a>
                 </div>
                 <div>
-                    <a href="">
-                    <img src="" alt="">
-                    <p><b></b></p>
-                    <p></p>
+                    <a href="#projetos">
+                    <img src="./static/Placeholder.png" alt="Em breve">
+                    <p class="titulo"><b>Em breve</b></p>
+                    <p class="descricao">----</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#projetos">
+                    <img src="./static/Placeholder.png" alt="Em breve">
+                    <p class="titulo"><b>Em breve</b></p>
+                    <p class="descricao">----</p>
                     </a>
                 </div>
             </span>
@@ -83,4 +109,5 @@
     </main>
 </body>
 
+<script src="./script.js"></script>
 </html>
