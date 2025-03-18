@@ -67,6 +67,7 @@ main .home {
 
 .home .picture img{
     height: 450px;
+    border-radius: 100px;
 }
 
 /* PERSONALIZAÇÃO DA SEÇÃO SOBRE */
@@ -171,11 +172,6 @@ main .projetos {
     flex-direction: column;
     height: 100vh;
     padding: 0 10vw;
-}
-
-.projetos .tituloProjetos {
-    
-    
 }
 
 .projetos .tituloProjetos h1 {
